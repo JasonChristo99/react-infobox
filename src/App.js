@@ -1,26 +1,26 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React, { useState } from "react";
+import "./App.css";
+import Search from "./Search";
+import Infobox from "./Infobox";
 
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+    const [inputText, setInputText] = useState("");
+    const [results, setResults] = useState({});
+    const [loading, setLoading] = useState(false);
+
+    return (
+        <div className="App">
+            <h1>Infobox Search Engine</h1>
+            <Search
+                inputText={inputText}
+                setInputText={setInputText}
+                setResults={setResults}
+                loading={loading}
+                setLoading={setLoading}
+            />
+            <Infobox results={results} loading={loading} />
+        </div>
+    );
 }
 
 export default App;
