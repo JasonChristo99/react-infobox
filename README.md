@@ -1,3 +1,5 @@
+A live demo of this app can be found here: https://reactjs-infobox.herokuapp.com/
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
