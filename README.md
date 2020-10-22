@@ -1,4 +1,5 @@
 This app searches the web using the DuckDuckGo API and provides an infobox (information box) for your queries.
+
 A live demo of this app can be found here: https://reactjs-infobox.herokuapp.com/
 
 .
