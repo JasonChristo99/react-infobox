@@ -1,0 +1,34 @@
+.infobox {
+    max-width: 70%;
+    margin: 10px auto;
+    padding: 2em;
+    background-color: rgb(255, 254, 254);
+    /* border: 1px solid rgb(153, 164, 175); */
+    border: 1px solid rgba(150,150,150,0.3);
+    border-radius: 2%;
+}
+
+.infobox-desc {
+    text-align: justify;
+}
+
+.infobox .related {
+    text-align: left;
+    margin-top: 40px;
+}
+
+.topic {
+    font-weight: 600;
+}
+
+.infobox-error {
+    text-align: center;
+}
+
+.related-img {
+    max-width: 5em;
+}
+
+.topic-img{
+    max-width: 5em;
+}
